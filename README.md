@@ -64,6 +64,23 @@ with the following content:
         "hf.TheBloke.mistral-7b-instruct-v0.2.Q4_K_M"
       ],
       "backend": "llama-cpp"
+    },
+    {
+      "id": "quarkus-langchain4j-step-04",
+      "description" : "Quarkus Langchain4j Step 04",
+      "name" : "Quarkus Langchain4j Step 04",
+      "repository": "https://github.com/feloy/ai-lab-recipes-langchain4j",
+      "ref": "main",
+      "icon": "natural-language-processing",
+      "categories": [
+        "natural-language-processing"
+      ],
+      "basedir": "step-04",
+      "readme": "",
+      "recommended": [
+        "hf.TheBloke.mistral-7b-instruct-v0.2.Q4_K_M"
+      ],
+      "backend": "llama-cpp"
     }
   ]
 }
