@@ -1,0 +1,17 @@
+FROM registry.access.redhat.com/ubi8/openjdk-21:latest
+
+ENV LANGUAGE='en_US:en'
+
+COPY --chown=185 pom.xml /app/pom.xml
+COPY --chown=185 mvnw /app
+COPY --chown=185 mvnw.cmd /app
+COPY --chown=185 src /app/src
+COPY --chown=185 .mvn /app/.mvn
+
+USER 185
+
+EXPOSE 8080
+
+WORKDIR /app
+
+CMD ./mvnw -Dquarkus.http.host=0.0.0.0 quarkus:dev
