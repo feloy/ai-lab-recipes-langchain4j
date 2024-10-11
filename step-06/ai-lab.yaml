@@ -4,6 +4,13 @@ application:
   name: ChatBot_Quarkus_Langchain4j_06
   description: Chat with a model service in a web frontend using Quarkus and Langchain4j - Step 06
   containers:
+    - name: pgvector
+      contextdir: .
+      containerfile: Containerfile.pgvector
+      arch:
+        - arm64
+        - amd64
+      image: quay.io/ai-lab/pgvector
     - name: quarkus-chat-app
       contextdir: .
       containerfile: Containerfile

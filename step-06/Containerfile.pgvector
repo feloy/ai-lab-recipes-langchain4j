@@ -1,0 +1,5 @@
+FROM pgvector/pgvector:pg17
+
+ENV POSTGRES_DATABASE=quarkus
+ENV POSTGRES_USER=quarkus
+ENV POSTGRES_PASSWORD=quarkus
